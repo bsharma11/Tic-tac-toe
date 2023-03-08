@@ -1,0 +1,61 @@
+#main-game{
+    text-align: center;
+  }
+
+/* #main-game p{
+    display: none;
+} */
+#playerturn{
+    display: none;
+}
+#game-winner{
+    width: 90%;
+    max-width: 40rem;
+    background-color: rgb(87, 74, 163);
+    margin: 1rem auto;
+    padding: 0.7rem;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}
+#game-winner h2{
+    font-size: 2.5rem;
+    margin: 0.7rem 0;
+}
+#game-winner p{
+    font-size: larger;
+    margin: 0.7rem 0;
+}
+#game-board{
+    list-style: none;
+    /* display: grid;  */
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3,6rem);
+    padding: 0;
+    margin: 1rem 0;
+    gap: 0.5rem;
+    justify-content: center;
+    display: none;
+
+}
+
+#game-board li{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(186, 156, 228);
+    border-radius: 5px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+#game-board li:hover{
+    background-color:rgb(141, 77, 229) ;
+    cursor: pointer;
+}   
+
+#game-board li.disabled{
+    cursor: default;
+    background-color: rgb(109, 43, 203);
+    color: white;
+}

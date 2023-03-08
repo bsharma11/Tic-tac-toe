@@ -1,0 +1,31 @@
+.modal {
+    position: fixed; /*it makes the position of 
+    the modal class fixed so when we scroll the page it stays on the same place*/
+    top: 20%; /*i.e 20% below for the top*/
+    left: 5%; /* distance of 5% from the left og the screen*/
+    width: 90%;
+    /* the above to and left properties are according to the mbile device so we aaply media query for the
+     bigger screens*/
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: none; 
+}
+
+#backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
+
+@media (min-width: 40rem){
+    .modal{
+        left: calc(50% - 20rem);
+        width: 40rem;
+    }
+}

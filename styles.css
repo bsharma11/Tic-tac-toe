@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    background-color: rgb(214, 214, 214);
+}
+#main-header{
+    background-color: rgb(87, 74, 163);
+    text-align: center;
+    color: rgb(255, 232, 232);
+    padding: 2rem 5%; /*5% helps to align the text with equal padding to the left and right so */
+                      /*  texts adjusts itself on bigger screens */
+}
+h1{
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.2rem;
+}
+.btn{
+    background-color:  rgb(87, 74, 163);
+    padding: 0.5rem 1.5rem;
+    border: 1px solid  rgb(87, 74, 163);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-alt{
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(87, 74, 163);
+}
+
+.btn:hover{
+    background-color: rgb(130, 120, 183);
+    border-color: rgb(130, 120, 183);
+
+}
+
+.btn-alt:hover{
+    background-color: rgb(186, 175, 239);
+    border-color: transparent;
+}
